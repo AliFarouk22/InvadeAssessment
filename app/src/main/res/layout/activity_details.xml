@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".DetailsActivity">
+
+        <ImageButton
+            android:id="@+id/refereshImgBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/baseline_refresh_24"
+            app:layout_constraintBottom_toTopOf="@+id/uni_nameDetailsTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/uni_nameDetailsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="16dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeTextType="uniform"
+            android:text="University Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nui_stateDetailsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="university state"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/uni_nameDetailsTV"
+            app:layout_constraintTop_toBottomOf="@+id/uni_nameDetailsTV" />
+
+        <TextView
+            android:id="@+id/countryTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Country"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/countryCodeTV"
+            app:layout_constraintStart_toStartOf="@+id/nui_stateDetailsTV"
+            app:layout_constraintTop_toBottomOf="@+id/nui_stateDetailsTV" />
+
+        <TextView
+            android:id="@+id/countryCodeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Country Code"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/countryTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/countryTV" />
+
+        <TextView
+            android:id="@+id/webPageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Web Page"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/countryTV"
+            app:layout_constraintTop_toBottomOf="@+id/countryTV" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
